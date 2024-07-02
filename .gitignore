@@ -30,5 +30,6 @@ pnpm-lock.yaml
 
 
 # Others
+.vscode
 .env
 .gitignore-template
