@@ -23,5 +23,11 @@ dist-ssr
 *.sln
 *.sw?
 
+# Package files
+package-lock.json
+yarn.lock
+.pnpm-lock.yaml
+
+
 # Others
 .gitignore-template
