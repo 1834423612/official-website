@@ -1,6 +1,8 @@
+/* global.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 @layer base {
   :root {
@@ -25,18 +27,48 @@
     --ring: 210 40% 60%;
     --radius: 1rem;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
 
   body {
-    @apply bg-background text-foreground font-body;
+    @apply bg-background text-foreground font-body min-h-screen flex flex-col;
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading;
   }
+
+  #app {
+    @apply flex-1 flex flex-col;
+  }
+}
+
+
+/* 
+---------------------------
+  ScrollBar Style
+---------------------------
+*/
+
+/* width */
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #60a5fa;
+	border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #3b82f6;
 }
