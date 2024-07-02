@@ -33,4 +33,4 @@ jobs:
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git add dist -f
         git commit -m "Deploy to HTML Pages"
-        git push origin `git subtree split --prefix dist vue`:webpage --force
+        git push origin `git subtree split --prefix dist master`:webpage --force
