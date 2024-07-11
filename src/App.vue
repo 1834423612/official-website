@@ -21,5 +21,5 @@ export default defineComponent({
 </script>
 
 <style>
-/* 全局样式 */
+/* Global Styles */
 </style>
