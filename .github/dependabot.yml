@@ -6,7 +6,7 @@
 version: 2
 updates:
   # 这是用于Vite项目的配置
-  - package-ecosystem: "pnpm" # 使用npm作为包管理器
+  - package-ecosystem: "npm" # 使用npm作为包管理器
     directory: "/" # 项目根目录
     schedule:
       interval: "weekly" # 每周检查更新
