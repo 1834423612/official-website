@@ -12,8 +12,7 @@
               <CardContent>
                 <CardTitle>Robot 1</CardTitle>
                 <CardDescription>
-                  Our first robot, built in 2018, was a great success and helped us qualify for our first regional
-                  competition.
+                  Our first robot, test was really good and we will continue winning the competition.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -24,8 +23,7 @@
               <CardContent>
                 <CardTitle>Robot 2</CardTitle>
                 <CardDescription>
-                  Our 2019 robot was a major improvement over our first design and helped us win our regional
-                  competition.
+                  Our first robot, test was really good and we will continue winning the competition.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -36,8 +34,7 @@
               <CardContent>
                 <CardTitle>Robot 3</CardTitle>
                 <CardDescription>
-                  Our 2020 robot was our most advanced yet, featuring cutting-edge technology and helping us reach the
-                  championship event.
+                  Our first robot, test was really good and we will continue winning the competition.
                 </CardDescription>
               </CardContent>
             </Card>
