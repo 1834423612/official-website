@@ -55,6 +55,8 @@
 /* width */
 ::-webkit-scrollbar {
 	width: 6px;
+  /* If scroll horizontal */
+  height: 6px;
 }
 
 /* Track */
