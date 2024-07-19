@@ -11,7 +11,7 @@
       <router-link to="/robots" class="hover:underline">Robots</router-link>
       <router-link to="/news" class="hover:underline">News</router-link>
       <router-link to="/sponsors" class="hover:underline">Sponsors</router-link> -->
-      <router-link to="/mentors" class="hover:underline">Menu 1</router-link>
+      <router-link to="/about" class="hover:underline">About</router-link>
       <router-link to="/members" class="hover:underline">Menu 2</router-link>
       <router-link to="/robots" class="hover:underline">Menu 3</router-link>
     </nav>
