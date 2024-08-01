@@ -2,7 +2,7 @@
   <div>
     <main class="flex-1">
       <section id="news" class="py-16 px-6">
-        <div class="container mx-auto max-w-4xl">
+        <div class="container mx-auto max-w-6xl">
           <h2 class="text-3xl font-bold mb-8">Latest News</h2>
           <div class="space-y-6">
             <article class="p-6 bg-white rounded-lg shadow-md">

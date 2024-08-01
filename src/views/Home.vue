@@ -2,7 +2,7 @@
   <div class="flex flex-col min-h-[100vh]">
     <main class="flex-1">
       <section class="bg-muted py-12 px-6 md:py-24 h-full">
-        <div class="container grid md:grid-cols-2 gap-8 px-6 items-center">
+        <div class="container mx-auto max-w-6xl grid md:grid-cols-2 gap-8 px-4 items-center">
           <div>
             <h2 class="text-xl font-bold mb-4">Welcome to</h2>
             <h2 class="text-4xl font-bold mb-4">TEAM 695 Bison Robotics</h2>

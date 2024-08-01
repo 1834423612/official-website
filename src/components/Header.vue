@@ -1,5 +1,6 @@
 <template>
-  <header class="bg-primary text-primary-foreground py-4 px-6 flex items-center justify-between">
+  <header class="bg-primary text-primary-foreground py-4 px-8 flex items-center justify-between">
+    <div class="container mx-auto max-w-6xl contents">
     <div class="flex items-center gap-4">
       <router-link to="/" class="hover:underline"><img src="../assets/images/bison-robotics.png" width="40" height="40" alt="695 Logo" class="rounded-full" /></router-link>
       <h1 class="text-2xl font-bold">695 Bison Robotics</h1>
@@ -19,6 +20,7 @@
       <MenuIcon class="h-6 w-6" />
       <span class="sr-only">Open Menu</span>
     </button>
+  </div>
   </header>
 </template>
 
