@@ -53,6 +53,3 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
-/* 添加样式或覆盖默认样式 */
-</style>
