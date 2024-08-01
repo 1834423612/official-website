@@ -70,12 +70,20 @@ import { defineComponent } from "vue";
 import CardStack from "../components/CardStack.vue";
 import Robots from "../views/Robots.vue";
 import Mentors from './Mentors.vue';
-import MentorCard from "../components/Cards/MentorCard.vue";
+// import MentorCard from "../components/Cards/MentorCard.vue";
 import Members from "../views/Members.vue";
 import News from "../views/News.vue";
 import Sponsors from "../views/Sponsors.vue";
 
 export default defineComponent({
-  components: { CardStack, Robots, Mentors, MentorCard, Members, News, Sponsors },
+  components: { 
+    CardStack, 
+    Robots, 
+    Mentors, 
+    // MentorCard, 
+    Members, 
+    News, 
+    Sponsors 
+  },
 });
 </script>

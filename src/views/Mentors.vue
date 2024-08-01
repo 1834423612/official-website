@@ -5,7 +5,7 @@
         <div class="container mx-auto max-w-6xl">
           <h2 class="text-3xl font-bold mb-8">Our Mentors</h2>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <MentorCard
+            <!-- <MentorCard
               src="https://placehold.co/100x100/ff0000/ffffff/"
               alt="Mentor Avatar"
               name="Test Hello"
@@ -32,6 +32,16 @@
               name="Test Hello"
               role="Test Role"
               detailsLink="/mentors/test-hello"
+            /> -->
+
+            <MentorCard
+              v-for="(mentor, index) in mentors"
+              :key="index"
+              :src="mentor.image"
+              :alt="mentor.name"
+              :name="mentor.name"
+              :role="mentor.role"
+              :detailsLink="`/mentors/${mentor.name}`"
             />
           </div>
         </div>
@@ -47,6 +57,17 @@ import MentorCard from "../components/Cards/MentorCard.vue";
 export default defineComponent({
   components: {
     MentorCard,
+  },
+  data() {
+    return {
+      mentors: [
+        { name: 'Test Name', role: 'role', image: 'https://placehold.co/100x100/ff0000/ffffff/' },
+        { name: 'Test Name', role: 'role', image: 'https://placehold.co/100x100/ff0000/ffffff/' },
+        { name: 'Test Name', role: 'role', image: 'https://placehold.co/100x100/ff0000/ffffff/' },
+        { name: 'Test Name', role: 'role', image: 'https://placehold.co/100x100/ff0000/ffffff/' },
+        { name: 'Test Name', role: 'role', image: 'https://placehold.co/100x100/ff0000/ffffff/' },
+      ],
+    };
   },
 });
 </script>

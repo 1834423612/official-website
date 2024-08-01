@@ -16,7 +16,8 @@ import Sponsors from '../views/Sponsors.vue';
 const routes = [
   { path: '/', component: Home },
   { path: '/about', component: About },
-  { path: '/mentors', component: Mentors },
+  // { path: '/mentors', component: Mentors },
+  { path: '/mentors/:id', component: Mentors },
   { path: '/members', component: Members },
   { path: '/robots', component: Robots },
   { path: '/news', component: News },
