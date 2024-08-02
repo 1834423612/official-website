@@ -12,6 +12,7 @@
         {{ name }}
       </h5>
       <span class="text-sm text-gray-500 dark:text-gray-400">{{ role }}</span>
+      <span class="text-sm text-gray-500 dark:text-gray-400">{{ email }}</span>
       <div class="flex mt-4 md:mt-6">
         <a
           :href="detailsLink"
@@ -49,6 +50,9 @@ export default defineComponent({
       type: String,
       default: "#",
     },
+    email: {
+      type: String,
+    }
   },
 });
 </script>
