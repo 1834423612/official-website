@@ -7,10 +7,10 @@
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card>
               <CardHeader>
-                <img src="https://1drv.ms/i/c/8c6e9013852d4128/ESEGUGf9uaFJk5bg60DyKqoBBqMU1InyHaLV6Jl_3tw1Iw?e=qJg9Rx" width="400" height="300" alt="Robot 1" class="rounded-t-lg" />
+                <img src="https://r2.fastbirdcdn.online/Robotics/Robots/66ac2099b1841-20240802_Screenshot 2024-08-01 193902.png" width="400" height="300" alt="Robot 1" class="rounded-t-lg" />
               </CardHeader>
               <CardContent>
-                <CardTitle>Robot 2023-2024</CardTitle>
+                <CardTitle>2023 FRC Season</CardTitle>
                 <CardDescription>
                   This simple yet eloquent design advancede to worlds.
                 </CardDescription>
@@ -21,9 +21,9 @@
                 <img src="https://gravatar.com/avatar/361a331e88af15ea5f7f81cdd60a6633e7bc4a69db43b236caae96cdcb1ddd03?s=1024" width="400" height="300" alt="Robot 2" class="rounded-t-lg" />
               </CardHeader>
               <CardContent>
-                <CardTitle>Robot 2</CardTitle>
+                <CardTitle>2024 FRC Season</CardTitle>
                 <CardDescription>
-                  Our first robot, test was really good and we will continue winning the competition.
+                  This.
                 </CardDescription>
               </CardContent>
             </Card>

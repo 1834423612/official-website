@@ -28,7 +28,7 @@
 
     <section class="py-12">
       <div class="container mx-auto px-5">
-        <h2 class="text-3xl font-medium text-center mb-8">Our [Gallery Name]</h2>
+        <h2 class="text-3xl font-medium text-center mb-8">Gallery</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           <GalleryCard
             v-for="(item, index) in galleryItems"
@@ -57,12 +57,14 @@ export default defineComponent({
   data() {
     return {
       galleryItems: [
-        { title: 'Image Title 1', description: 'Description for image 1.', image: 'https://placehold.co/400x300/444/white/' },
-        { title: 'Image Title 2', description: 'Description for image 2.', image: 'https://placehold.co/400x300/444/white/' },
-        { title: 'Image Title 3', description: 'Description for image 3.', image: 'https://placehold.co/400x300/444/white/' },
+        { title: 'Pittsburgh Regional', description: 'Pittsburgh Regional 2024', image: 'https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_3/v1716484588/beachwoodschoolsorg/xpf58hgz0gfv7uiwhimd/RoboticsTeamPittsburghRegional.jpg' },
+        { title: 'Gold Module', description: 'Gold Module scores a cube', image: 'https://r2.fastbirdcdn.online/Robotics/Robots/66ac2313c6e20-20240802_Screenshot 2024-08-01 200551.png' },
+        { title: 'Gold Module', description: 'Gold Module on practice field', image: 'https://r2.fastbirdcdn.online/Robotics/Robots/66ac2313c81d8-20240802_Screenshot 2024-08-01 200559.png' },
+        /*
         { title: 'Image Title 4', description: 'Description for image 4.', image: 'https://placehold.co/400x300/444/white/' },
         { title: 'Image Title 5', description: 'Description for image 5.', image: 'https://placehold.co/400x300/444/white/' },
         { title: 'Image Title 6', description: 'Description for image 6.', image: 'https://placehold.co/400x300/444/white/' },
+        */
       ],
       WinnerBannerItems: [
         { title: 'Winner', description: '2023 SOUTH FLORIDA REGIONAL' },

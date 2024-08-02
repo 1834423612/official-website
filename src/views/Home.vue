@@ -11,9 +11,9 @@
               the next generation of engineers and innovators. Through our
               participation in the annual FIRST Robotics Competition, we strive
               to develop cutting-edge robots, foster teamwork and leadership,
-              and make a positive impact on our community. 【AI Generated,
-              should be changed】
+              and make a positive impact on our community.
             </p>
+            <!--buttons
             <div class="flex gap-4">
               <router-link
                 to="/"
@@ -28,6 +28,7 @@
                 Button 2
               </router-link>
             </div>
+            -->
           </div>
           <!-- <img
             src="https://gravatar.com/avatar/361a331e88af15ea5f7f81cdd60a6633e7bc4a69db43b236caae96cdcb1ddd03?s=1024"
@@ -36,7 +37,7 @@
             alt="Robotics Picture"
             class="rounded-lg object-cover"
           /> -->
-          <CardStack></CardStack>
+          <!--<CardStack></CardStack>-->
         </div>
       </section>
 
