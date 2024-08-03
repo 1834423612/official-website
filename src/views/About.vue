@@ -8,7 +8,7 @@
       />
       <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-center justify-center">
         <h1 class="text-white text-4xl md:text-5xl font-bold">About Team</h1>
-        <p class="text-white text-lg mt-2 ml-3">Learn more about our dedicated team members and their contributions.</p>
+        <p class="text-gray-200 text-lg mt-2 mx-2 text-center">Learn more about our dedicated team members and their contributions.</p>
       </div>
     </header>
 
