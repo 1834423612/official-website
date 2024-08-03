@@ -3,7 +3,7 @@
         <main class="flex-1">
             <section class="text-gray-600 body-font">
                 <div class="container px-5 py-24 mx-auto flex flex-col">
-                    <div class="lg:w-4/6 mx-auto">
+                    <div class="lg:w-11/12 mx-auto">
                         <div class="rounded-lg h-64 overflow-hidden">
                             <img
                                 :alt="mentor.name"
@@ -25,9 +25,9 @@
                                     <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">{{ mentor.name }}</h2>
                                     <div class="w-12 h-1 bg-blue-500 rounded mt-2 mb-4"></div>
                                     <p class="text-base">{{ mentor.role }}</p>
-                                    <p>
-                                        <i-line-md:email-twotone />
-                                    </p>
+                                    <a :href="'mailto:' + mentor.email" class="mt-3">
+                                        <i-line-md:email-twotone class="text-xl" />
+                                    </a>
                                 </div>
                             </div>
                             <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
