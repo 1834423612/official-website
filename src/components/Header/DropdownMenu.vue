@@ -18,7 +18,7 @@
             <MenuItems
                 class="absolute right-0 z-20 mt-2 w-28 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black/5 focus:outline-none overflow-hidden">
                 <div>
-                    <MenuItem v-for="(item, index) in menuItems" :key="index" v-slot="{ active }">
+                    <MenuItem v-for="(item, index) in menuItems" :key="index">
                         <router-link :to="item.link"
                             class="block px-4 py-2 text-sm text-gray-900 hover:bg-violet-500 hover:text-white transition-colors"
                             @click="closeMenu">
