@@ -1,18 +1,4 @@
 <template>
-    <!-- <div class="relative w-64 mx-auto">
-      <div class="bg-[#0f4bcb] text-center py-3">
-        <img
-          src="https://www.thebluealliance.com/images/first_icon.svg"
-          alt="FRC Logo"
-          class="w-12 mx-auto mb-1"
-        />
-        <h2 class="text-white font-bold italic text-lg">{{ title }}</h2>
-        <p class="text-white text-md mt-1">{{ description }}</p>
-      </div>
-      <div class="absolute bottom-0 left-0 right-0 h-0 w-0 border-l-[32px] border-r-[32px] border-t-[16px] border-t-transparent border-l-[#0f4bcb] border-r-[#0f4bcb]"></div>
-      <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-0 w-0 border-l-[32px] border-r-[32px] border-t-[16px] border-t-[#0f4bcb] border-l-transparent border-r-transparent"></div>
-    </div> -->
-
     <div class="relative inline-block bg-[#0f4bcb] text-white text-center p-2 w-36 h-[170px] mb-10">
     <img
       src="https://www.thebluealliance.com/images/first_icon.svg"

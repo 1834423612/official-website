@@ -1,40 +1,62 @@
 <template>
-  <header class="bg-primary text-primary-foreground py-4 px-8 flex items-center justify-between">
-    <div class="container mx-auto max-w-6xl contents">
-    <div class="flex items-center gap-4">
-      <router-link to="/" class="hover:underline"><img src="../assets/images/bison-robotics.png" width="40" height="40" alt="695 Logo" class="rounded-full" /></router-link>
-      <h1 class="text-2xl font-bold">695 Bison Robotics</h1>
+  <header class="bg-primary text-primary-foreground py-4 px-8 flex items-center justify-between relative">
+    <div class="container mx-auto max-w-6xl flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <router-link to="/" class="hover:no-underline">
+          <!-- 
+            - `w-10 h-10` sets the width and height of the logo to 40px by default (e.g., tablets and desktops) (Tailwind's `w-10` and `h-10` correspond to 2.5rem, which is 40px).
+            - `sm:w-8 sm:h-8` sets the width and height of the logo to 32px on small screens (phones) (`w-8` and `h-8` correspond to 2rem, which is 32px)
+          -->
+          <img src="@/assets/images/bison-robotics.png" alt="695 Logo" class="w-10 h-10 md:w-10 md:h-10 sm:w-8 sm:h-8 rounded-full" />
+        </router-link>
+        <h1 class="leading-4 text-size-5 sm:text-xl md:text-2xl font-bold">695 Bison Robotics</h1>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <DropdownMenu
+        buttonText="Menu"
+        :menuItems="menuItems"
+      />
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex items-center gap-6">
+        <router-link to="/" class="hover:underline">Home</router-link>
+        <router-link to="/about" class="hover:underline">About</router-link>
+        <router-link to="/members" class="hover:underline">Menu 2</router-link>
+        <router-link to="/robots" class="hover:underline">Menu 3</router-link>
+      </nav>
     </div>
-    <nav class="hidden md:flex items-center gap-6">
-      <router-link to="/" class="hover:underline">Home</router-link>
-      <!-- <router-link to="/mentors" class="hover:underline">Mentors</router-link>
-      <router-link to="/members" class="hover:underline">Members</router-link>
-      <router-link to="/robots" class="hover:underline">Robots</router-link>
-      <router-link to="/news" class="hover:underline">News</router-link>
-      <router-link to="/sponsors" class="hover:underline">Sponsors</router-link> -->
-      <router-link to="/about" class="hover:underline">About</router-link>
-      <router-link to="/members" class="hover:underline">Menu 2</router-link>
-      <router-link to="/robots" class="hover:underline">Menu 3</router-link>
-    </nav>
-    <button class="md:hidden" @click="toggleMenu">
-      <MenuIcon class="h-6 w-6" />
-      <span class="sr-only">Open Menu</span>
-    </button>
-  </div>
   </header>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import MenuIcon from './MenuIcon.vue';
+import DropdownMenu from '@/components/Header/DropdownMenu.vue';
+
+interface MenuItem {
+    name: string;
+    link: string;
+}
 
 export default defineComponent({
-  components: { MenuIcon },
-  methods: {
-    toggleMenu() {
-      // Some click events need to do
-      console.log('Menu toggled');
-    }
-  }
+  name: 'Header',
+  components: { DropdownMenu },
+  data() {
+    return {
+      menuItems: [
+        { name: 'Home', link: '/'},
+        { name: 'About', link: '/about'},
+        { name: 'Menu 2', link: '/members'},
+        { name: 'Menu 3', link: '/robots'}
+      ] as MenuItem[], // Cast to MenuItem array
+    };
+  },
 });
 </script>
+
+<style scoped>
+/* Add smooth transition */
+nav {
+  transition: max-height 0.3s ease-in-out;
+}
+</style>

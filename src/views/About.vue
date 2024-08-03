@@ -8,14 +8,15 @@
       />
       <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-center justify-center">
         <h1 class="text-white text-4xl md:text-5xl font-bold">About Team</h1>
-        <p class="text-white text-lg mt-2">Learn more about our dedicated team members and their contributions.</p>
+        <p class="text-white text-lg mt-2 ml-3">Learn more about our dedicated team members and their contributions.</p>
       </div>
     </header>
 
-    <section class="pt-12">
-      <div class="container mx-auto px-5">
+    <!-- Achievements Banner Area (Blue Flag) -->
+    <section class="pt-8 flex justify-between">
+      <div class="container mx-auto px-6">
         <h2 class="text-3xl font-medium text-center mb-8">Achievements</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 lg:grid-cols-6 gap-4">
           <WinnerBanner
             v-for="(item, index) in WinnerBannerItems"
             :key="index"
@@ -26,6 +27,7 @@
       </div>
     </section>
 
+    <!-- Gallery Area -->
     <section class="py-12">
       <div class="container mx-auto px-5">
         <h2 class="text-3xl font-medium text-center mb-8">Gallery</h2>
@@ -57,11 +59,11 @@ export default defineComponent({
   data() {
     return {
       galleryItems: [
-        { title: 'Pittsburgh Regional', description: 'Pittsburgh Regional 2024', image: 'https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_3/v1716484588/beachwoodschoolsorg/xpf58hgz0gfv7uiwhimd/RoboticsTeamPittsburghRegional.jpg' },
-        { title: 'Gold Module', description: 'Gold Module scores a cube', image: 'https://r2.fastbirdcdn.online/Robotics/Robots/66ac2313c6e20-20240802_Screenshot 2024-08-01 200551.png' },
-        { title: 'Gold Module', description: 'Gold Module on practice field', image: 'https://r2.fastbirdcdn.online/Robotics/Robots/66ac2313c81d8-20240802_Screenshot 2024-08-01 200559.png' },
+        { title: 'Pittsburgh Regional', description: 'Pittsburgh Regional 2024', image: 'https://r2.fastbirdcdn.online/Robotics/Robots/66ad276113a1c-20240803_RoboticsTeamPittsburghRegional.jpg' },
+        { title: 'Gold Module', description: 'Gold Module scores a cube', image: 'https://r2.fastbirdcdn.online/Robotics/Robots/66ac2313c6e20-20240802_Screenshot%202024-08-01%20200551.png' },
+        { title: 'Gold Module', description: 'Gold Module on practice field', image: 'https://r2.fastbirdcdn.online/Robotics/Robots/66ac2313c81d8-20240802_Screenshot%202024-08-01%20200559.png' },
+        { title: 'Gold Module', description: 'Description for image 4.', image: 'https://r2.fastbirdcdn.online/Robotics/Robots/66ac2099b1841-20240802_Screenshot%202024-08-01%20193902.png' },
         /*
-        { title: 'Image Title 4', description: 'Description for image 4.', image: 'https://placehold.co/400x300/444/white/' },
         { title: 'Image Title 5', description: 'Description for image 5.', image: 'https://placehold.co/400x300/444/white/' },
         { title: 'Image Title 6', description: 'Description for image 6.', image: 'https://placehold.co/400x300/444/white/' },
         */
