@@ -1,6 +1,8 @@
 <template>
   <div>
     <header class="relative">
+
+      <!-- About Team Banner -->
       <img
         src="https://placehold.co/1920x600/22c55e/22c55e/"
         alt="About Team"
@@ -16,7 +18,7 @@
     <section class="pt-8 flex justify-between">
       <div class="container mx-auto px-6">
         <h2 class="text-3xl font-medium text-center mb-8">Achievements</h2>
-        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 lg:grid-cols-6 gap-4">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
           <WinnerBanner
             v-for="(item, index) in WinnerBannerItems"
             :key="index"
