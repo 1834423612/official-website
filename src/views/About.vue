@@ -27,6 +27,25 @@
       </div>
     </section>
 
+    <!-- Mentors Section -->
+    <section id="mentors" class="py-16 px-6 bg-green-100">
+      <div class="container mx-auto max-w-6xl">
+        <h2 class="text-3xl font-bold mb-8">Our Mentors</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <MentorCard
+            v-for="(mentor, index) in mentors"
+            :key="index"
+            :src="mentor.avatar"
+            :alt="mentor.name"
+            :name="mentor.name"
+            :role="mentor.role"
+            :detailsLink="`/mentors/${mentor.name.replace(/ /g, '-')}`"
+            :email="mentor.email"
+          />
+        </div>
+      </div>
+    </section>
+
     <!-- Gallery Area -->
     <section class="py-12">
       <div class="container mx-auto px-5">
@@ -35,9 +54,9 @@
           <GalleryCard
             v-for="(item, index) in galleryItems"
             :key="index"
+            :image="item.image"
             :title="item.title"
             :description="item.description"
-            :image="item.image"
           />
         </div>
       </div>
@@ -47,17 +66,26 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import GalleryCard from '@/components/Cards/GalleryCard.vue';
 import WinnerBanner from '@/components/Cards/WinnerBanner.vue';
+import mentorsData from '../components/Mentor/info.json';
+import MentorCard from '@/components/Cards/MentorCard.vue';
+import GalleryCard from '@/components/Cards/GalleryCard.vue';
 
 export default defineComponent({
   name: 'About',
   components: {
-    GalleryCard,
     WinnerBanner,
+    MentorCard,
+    GalleryCard,
   },
   data() {
     return {
+      WinnerBannerItems: [
+        { title: 'Winner', description: '2023 SOUTH FLORIDA REGIONAL' },
+        { title: 'Winner', description: '2023 SOUTH FLORIDA REGIONAL' },
+        { title: 'Winner', description: '2023 SOUTH FLORIDA REGIONAL' },
+      ],
+      mentors: mentorsData,
       galleryItems: [
         { title: 'Pittsburgh Regional', description: 'Pittsburgh Regional 2024', image: 'https://r2.fastbirdcdn.online/Robotics/Robots/66ad276113a1c-20240803_RoboticsTeamPittsburghRegional.jpg' },
         { title: 'Gold Module', description: 'Gold Module scores a cube', image: 'https://r2.fastbirdcdn.online/Robotics/Robots/66ac2313c6e20-20240802_Screenshot%202024-08-01%20200551.png' },
@@ -67,11 +95,6 @@ export default defineComponent({
         { title: 'Image Title 5', description: 'Description for image 5.', image: 'https://placehold.co/400x300/444/white/' },
         { title: 'Image Title 6', description: 'Description for image 6.', image: 'https://placehold.co/400x300/444/white/' },
         */
-      ],
-      WinnerBannerItems: [
-        { title: 'Winner', description: '2023 SOUTH FLORIDA REGIONAL' },
-        { title: 'Winner', description: '2023 SOUTH FLORIDA REGIONAL' },
-        { title: 'Winner', description: '2023 SOUTH FLORIDA REGIONAL' },
       ],
     };
   },

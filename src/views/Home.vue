@@ -68,13 +68,6 @@
 
       <!-- Mentors Section -->
       <Mentors />
-      <!-- <MentorCard
-        src="https://placehold.co/100x100/ff0000/ffffff/"
-        alt="Mentor Avatar"
-        name="John Doe"
-        role="Lead Mentor"
-        detailsLink="/mentors/john-doe"
-      /> -->
 
       <!-- Team Members Section -->
       <!-- <Members /> -->

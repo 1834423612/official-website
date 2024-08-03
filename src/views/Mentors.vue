@@ -24,7 +24,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import MentorCard from "../components/Cards/MentorCard.vue";
+import MentorCard from "@/components/Cards/MentorCard.vue";
 
 export default defineComponent({
   components: {
