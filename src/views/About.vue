@@ -63,7 +63,7 @@
         <p class="mt-6 text-lg leading-8 text-gray-600">Value description here.</p>
       </div>
       <dl
-        class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        class="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
         <div v-for="value in values" :key="value.name">
           <dt class="font-semibold text-gray-900">{{ value.name }}</dt>
           <dd class="mt-1 text-gray-600">{{ value.description }}</dd>
