@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-primary text-primary-foreground py-4 px-8 flex items-center justify-between relative">
+  <header class="bg-primary text-primary-foreground py-4 px-4 sm:px-8 flex items-center justify-between relative">
     <div class="container mx-auto max-w-6xl flex items-center justify-between">
       <div class="flex items-center gap-4">
         <router-link to="/" class="hover:no-underline">
@@ -19,19 +19,17 @@
       />
 
       <!-- Desktop Menu -->
-      <nav class="hidden md:flex items-center gap-6">
-        <router-link to="/" class="hover:underline">Home</router-link>
-        <router-link to="/about" class="hover:underline">About</router-link>
-        <router-link to="/members" class="hover:underline">Menu 2</router-link>
-        <router-link to="/robots" class="hover:underline">Menu 3</router-link>
-      </nav>
+      <DesktopMenu
+        :menuItems="menuItems"
+      />
     </div>
   </header>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import DropdownMenu from '@/components/Header/DropdownMenu.vue';
+import DropdownMenu from '@/components/Header/MobileDropdownMenu.vue';
+import DesktopMenu from './Header/DesktopMenu.vue';
 
 interface MenuItem {
     name: string;
@@ -40,7 +38,10 @@ interface MenuItem {
 
 export default defineComponent({
   name: 'Header',
-  components: { DropdownMenu },
+  components: { 
+    DropdownMenu,
+    DesktopMenu,
+  },
   data() {
     return {
       menuItems: [

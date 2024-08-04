@@ -36,7 +36,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue';
-import { ChevronDownIcon } from '@heroicons/vue/20/solid';
+// import { ChevronDownIcon } from '@heroicons/vue/20/solid';
 import { Bars3Icon } from "@heroicons/vue/20/solid";
 
 interface MenuItemProps {
@@ -51,7 +51,7 @@ export default defineComponent({
         MenuButton, 
         MenuItems, 
         MenuItem, 
-        ChevronDownIcon,
+        // ChevronDownIcon,
         Bars3Icon,
     },
     props: {
