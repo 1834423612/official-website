@@ -36,7 +36,7 @@ The color format used is HSL (Hue, Saturation, Lightness):
 
 ---------------------------
 */
-
+ 
 @layer base {
   :root {
     --background: 210 100% 97%;
