@@ -1,7 +1,7 @@
 <template>
-  <header class="bg-primary text-primary-foreground py-4 px-4 sm:px-8 flex items-center justify-between relative">
-    <div class="container mx-auto max-w-6xl flex items-center justify-between">
-      <div class="flex items-center gap-4">
+  <header class="bg-primary text-primary-foreground py-4 px-4 sm:px-8 flex items-center">
+    <div class="container mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3">
         <router-link to="/" class="hover:no-underline">
           <!-- 
             - `w-10 h-10` sets the width and height of the logo to 40px by default (e.g., tablets and desktops) (Tailwind's `w-10` and `h-10` correspond to 2.5rem, which is 40px).
@@ -20,6 +20,7 @@
 
       <!-- Desktop Menu -->
       <DesktopMenu
+        class="hidden md:flex items-center gap-4"
         :menuItems="menuItems"
       />
     </div>
