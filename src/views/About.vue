@@ -3,7 +3,7 @@
     <header class="relative">
 
       <!-- About Team Banner -->
-      <img src="https://placehold.co/1920x600/22c55e/22c55e/" alt="About Team" class="w-full h-[33vh] object-cover" />
+      <img src="https://placehold.co/1920x600/684ee0/22c55e/" alt="About Team" class="w-full h-[33vh] object-cover" />
       <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-center justify-center">
         <h1 class="text-white text-4xl md:text-5xl font-bold">About Team 695</h1>
         <p class="text-gray-200 text-lg mt-2 mx-2 text-center">Learn more about our dedicated team members and their
