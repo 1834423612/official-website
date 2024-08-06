@@ -2,7 +2,7 @@
   <div class="flex flex-col min-h-[100vh]">
     <main class="flex-1">
       <section class="bg-muted py-12 px-6 md:py-24 h-full">
-        <div class="container mx-auto max-w-6xl grid md:grid-cols-2 gap-8 px-4 items-center">
+        <div class="container mx-auto max-w-6xl grid md:grid-cols-2 gap-0 sm:gap-8 px-4 items-center">
           <div>
             <h2 class="text-xl font-bold mb-4">Welcome to</h2>
             <h2 class="text-4xl font-bold mb-4">TEAM 695 Bison Robotics</h2>
@@ -34,10 +34,8 @@
           <!-- 单图展示 -->
           <img
             src="https://gravatar.com/avatar/361a331e88af15ea5f7f81cdd60a6633e7bc4a69db43b236caae96cdcb1ddd03?s=1024"
-            width="600"
-            height="400"
             alt="Robotics Picture"
-            class="rounded-lg object-cover w-full md:w-1/2 lg:hidden"
+            class="my-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none "
           />
 
           <!-- 图片瀑布样式 -->
