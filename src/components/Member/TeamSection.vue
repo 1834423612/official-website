@@ -25,15 +25,11 @@ export default defineComponent({
     data() {
         return {
             members: [
-                { name: 'Test Name', role: 'role', image: 'https://placehold.co/600x400/3b82f6/white/' },
-                { name: 'Test Name', role: 'Design', image: 'https://placehold.co/600x400/3b82f6/white/' },
-                { name: 'Test Name', role: 'Programming', image: 'https://placehold.co/600x400/3b82f6/white/' },
-                { name: 'Test Name', role: 'role', image: 'https://placehold.co/600x400/3b82f6/white/' },
-                { name: 'Test Name', role: 'role', image: 'https://placehold.co/600x400/3b82f6/white/' },
-                { name: 'Test Name', role: 'role', image: 'https://placehold.co/600x400/3b82f6/white/' },
-                { name: 'Test Name', role: 'role', image: 'https://placehold.co/600x400/3b82f6/white/' },
-                { name: 'Test Name', role: 'role', image: 'https://placehold.co/600x400/3b82f6/white/' },
-                { name: 'Test Name', role: 'role', image: 'https://placehold.co/600x400/3b82f6/white/' },
+                { name: 'Dotan Dana', role: 'Scouting & Strategy Lead' },
+                { name: 'Alex Ribochii', role: 'Scouting & Strategy Lead' },
+                { name: 'Shamith Murphy', role: 'Software Lead' },
+                { name: 'Nate Brodbent', role: 'CAD Lead' },
+                { name: 'Riley Walker', role: 'Fabrication Lead' },
             ],
         };
     },

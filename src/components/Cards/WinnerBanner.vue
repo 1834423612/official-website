@@ -1,9 +1,9 @@
 <template>
-    <div class="relative inline-block bg-[#0f4bcb] text-white text-center p-2 w-36 h-[170px] mb-10 ml-2">
+    <div class="relative inline-block bg-[#0f4bcb] text-white text-center p-2 w-36 h-[190px] mb-10 ml-2">
         <img
         src="https://www.thebluealliance.com/images/first_icon.svg"
         alt="FRC Logo"
-        class="w-[4.8rem] mx-auto mb-2 mt-4"
+        class="w-[4.8rem] mx-auto mb-2 mt-3"
         />
         <div class="award-name">
             <span class="text-base font-bold italic text-center mb-8">{{ title }}</span>
